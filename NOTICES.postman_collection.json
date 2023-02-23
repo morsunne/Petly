@@ -1,0 +1,1218 @@
+{
+	"info": {
+		"_postman_id": "9aaad35b-d965-487e-8514-5b679527a502",
+		"name": "NOTICES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24684790"
+	},
+	"item": [
+		{
+			"name": "Get by categories - sell",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/sell",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"sell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by categories - lost/found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/lost-found",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"lost-found"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by categories - good hands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/for-free",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"for-free"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by categories - good hands Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/63eba9f606f32f7119207e02",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"63eba9f606f32f7119207e02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ1MzkzNiwiZXhwIjoxNjc2NTI1OTM2fQ.xu_7Z8OeQK98B-xtpayO7fxOtlWAliyyxvOYJ8yFiw0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/63eba9f606f32f7119207e02/favorite",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"63eba9f606f32f7119207e02",
+						"favorite"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove from favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ1MzkzNiwiZXhwIjoxNjc2NTI1OTM2fQ.xu_7Z8OeQK98B-xtpayO7fxOtlWAliyyxvOYJ8yFiw0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/63eba9f606f32f7119207e02/remove-favorite",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"63eba9f606f32f7119207e02",
+						"remove-favorite"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice without title",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2MTAxMywiZXhwIjoxNjc2NTMzMDEzfQ.uF1BeYISiMIV_251EzCTiaceRCn7xAZEACHitHGqYi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100$",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "0672wtUyI/3147454361_5e12880eb8_b.jpg"
+						},
+						{
+							"key": "category",
+							"value": "lost-found",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice without name lost found",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2MTAxMywiZXhwIjoxNjc2NTMzMDEzfQ.uF1BeYISiMIV_251EzCTiaceRCn7xAZEACHitHGqYi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "fdgdgsgsg",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100$",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "0672wtUyI/3147454361_5e12880eb8_b.jpg"
+						},
+						{
+							"key": "category",
+							"value": "lost-found",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice without name sell",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2MTAxMywiZXhwIjoxNjc2NTMzMDEzfQ.uF1BeYISiMIV_251EzCTiaceRCn7xAZEACHitHGqYi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "fdgdgsgsg",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100$",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "0672wtUyI/3147454361_5e12880eb8_b.jpg"
+						},
+						{
+							"key": "category",
+							"value": "sell",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice without place",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ1Nzg0MSwiZXhwIjoxNjc2NTI5ODQxfQ.xYmMC47FTJ-gdfSHGTOCKM2bmv8BUFvEGsrTYGVzppQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "fdgdgsgsg",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100$",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "0672wtUyI/3147454361_5e12880eb8_b.jpg"
+						},
+						{
+							"key": "category",
+							"value": "lost-found",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice without category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2MTAxMywiZXhwIjoxNjc2NTMzMDEzfQ.uF1BeYISiMIV_251EzCTiaceRCn7xAZEACHitHGqYi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "fdgdgsgsg",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100$",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "0672wtUyI/3147454361_5e12880eb8_b.jpg"
+						},
+						{
+							"key": "category",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice without sex",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ1Nzg0MSwiZXhwIjoxNjc2NTI5ODQxfQ.xYmMC47FTJ-gdfSHGTOCKM2bmv8BUFvEGsrTYGVzppQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "fdgdgsgsg",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100$",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "imageURL",
+							"type": "file",
+							"src": "0672wtUyI/3147454361_5e12880eb8_b.jpg"
+						},
+						{
+							"key": "category",
+							"value": "lost-found",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2MTAxMywiZXhwIjoxNjc2NTMzMDEzfQ.uF1BeYISiMIV_251EzCTiaceRCn7xAZEACHitHGqYi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Title is the best",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "Female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "xarAj_QdK/cat.jpg"
+						},
+						{
+							"key": "category",
+							"value": "sell",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice with zero price",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2MTAxMywiZXhwIjoxNjc2NTMzMDEzfQ.uF1BeYISiMIV_251EzCTiaceRCn7xAZEACHitHGqYi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Title is the best",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "Female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "xarAj_QdK/cat.jpg"
+						},
+						{
+							"key": "category",
+							"value": "sell",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice with invalid sex",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2MTAxMywiZXhwIjoxNjc2NTMzMDEzfQ.uF1BeYISiMIV_251EzCTiaceRCn7xAZEACHitHGqYi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Title is the best",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2147483647",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "Female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "xarAj_QdK/cat.jpg"
+						},
+						{
+							"key": "category",
+							"value": "lost-found",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a notice with space in place",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2MTAxMywiZXhwIjoxNjc2NTMzMDEzfQ.uF1BeYISiMIV_251EzCTiaceRCn7xAZEACHitHGqYi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Title is the best",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Labrador",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": " London",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2147483647",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Phil",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "01.01.2001",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "xarAj_QdK/cat.jpg"
+						},
+						{
+							"key": "category",
+							"value": "lost-found",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pets created by user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ2Mzg5MSwiZXhwIjoxNjc2NTM1ODkxfQ.WZh2gdneerZCGU06oLQLHLmIz0s_AE62ShlhQYxGn9s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/own",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"own"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of favorites",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ1MzkzNiwiZXhwIjoxNjc2NTI1OTM2fQ.xu_7Z8OeQK98B-xtpayO7fxOtlWAliyyxvOYJ8yFiw0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/favorite",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"favorite"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of favorites after delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ1MzkzNiwiZXhwIjoxNjc2NTI1OTM2fQ.xu_7Z8OeQK98B-xtpayO7fxOtlWAliyyxvOYJ8yFiw0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/favorite",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"favorite"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of favorites after delete Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ5NTkzOCwiZXhwIjoxNjc2NTY3OTM4fQ.TcjK2EI-ZAgmGElo5vkzzWqhbjExvDKY67NgQSIqxRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/notices/63ed4eda12e05b6d78b6e0ce",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"notices",
+						"63ed4eda12e05b6d78b6e0ce"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQ1MTY1MSwiZXhwIjoxNjc2NTIzNjUxfQ.gaPuaoIZluTb9uRyeBbDFPzC9ZTVovDh1DK_j4lEtAA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
