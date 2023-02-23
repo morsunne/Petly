@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "4a39b6dc-2390-4c3c-912d-079b6af92749",
+		"name": "SERVICES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24684790"
+	},
+	"item": [
+		{
+			"name": "Get partners info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/services",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/news",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"news"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
