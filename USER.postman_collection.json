@@ -1,0 +1,599 @@
+{
+	"info": {
+		"_postman_id": "a5e6c699-2ce4-4476-92cd-39875e7e2678",
+		"name": "USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24684790"
+	},
+	"item": [
+		{
+			"name": "Get info about the user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjE5MzE3MywiZXhwIjoxNjc2MjY1MTczfQ.b6x5AUUbJ6cknG5F1WcLJA3z1PRBmlCIEOwC2_RmATw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet (long breed)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4MTQ4OTllMjIxMzkyNTVjNWFmYyIsImlhdCI6MTY3NjExNzU4MCwiZXhwIjoxNjc2MTg5NTgwfQ.bMNrdHZQvAhgO9lx-lUn_BTFzuMOnE6CW4DvLothKeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Wilson",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "15.05.2020",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Jack Russel terrier",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "HpferVSC5/opera_DIV1vp2shJ.png"
+						},
+						{
+							"key": "Comments",
+							"value": "comment",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet (long comment)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4MTQ4OTllMjIxMzkyNTVjNWFmYyIsImlhdCI6MTY3NjExNzU4MCwiZXhwIjoxNjc2MTg5NTgwfQ.bMNrdHZQvAhgO9lx-lUn_BTFzuMOnE6CW4DvLothKeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Wilson",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "15.10.2021",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Labrador",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "yhAtsYdKQ/opera_DIV1vp2shJ.png"
+						},
+						{
+							"key": "Comments",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet (wrong day)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4MTQ4OTllMjIxMzkyNTVjNWFmYyIsImlhdCI6MTY3NjExNzU4MCwiZXhwIjoxNjc2MTg5NTgwfQ.bMNrdHZQvAhgO9lx-lUn_BTFzuMOnE6CW4DvLothKeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Wilson",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "65.10.2021",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Labrador",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "yhAtsYdKQ/opera_DIV1vp2shJ.png"
+						},
+						{
+							"key": "Comments",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet (wrong month)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4MTQ4OTllMjIxMzkyNTVjNWFmYyIsImlhdCI6MTY3NjExNzU4MCwiZXhwIjoxNjc2MTg5NTgwfQ.bMNrdHZQvAhgO9lx-lUn_BTFzuMOnE6CW4DvLothKeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Wilson",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "15.98.2021",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Labrador",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "yhAtsYdKQ/opera_DIV1vp2shJ.png"
+						},
+						{
+							"key": "Comments",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet (wrong year)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4MTQ4OTllMjIxMzkyNTVjNWFmYyIsImlhdCI6MTY3NjExNzU4MCwiZXhwIjoxNjc2MTg5NTgwfQ.bMNrdHZQvAhgO9lx-lUn_BTFzuMOnE6CW4DvLothKeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Wilson",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "15.08.2023",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Labrador",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "yhAtsYdKQ/opera_DIV1vp2shJ.png"
+						},
+						{
+							"key": "Comments",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjEzNDI1NCwiZXhwIjoxNjc2MjA2MjU0fQ.gkEQlJkBrfiG5Uo6rfHxNFr42jg4bY-5G7VCluNwFts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Wilson",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "15.12.2020",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Jack Russel",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "82Yz0lLNG/opera_aZRGaSbM4Q.png"
+						},
+						{
+							"key": "comments",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet (cat)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjEzNDI1NCwiZXhwIjoxNjc2MjA2MjU0fQ.gkEQlJkBrfiG5Uo6rfHxNFr42jg4bY-5G7VCluNwFts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Stepan",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "10.09.2010",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Unknown",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "82Yz0lLNG/opera_aZRGaSbM4Q.png"
+						},
+						{
+							"key": "comments",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet (cat) Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE4YzAxMWUxMGNhYTJhMzJjYzA3ZCIsImlhdCI6MTY3NjQ1MzIzMSwiZXhwIjoxNjc2NTI1MjMxfQ.hcSzoCELt0UyzqKTOkGOl94KEqYR_FFPNMBjCUtiAws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "kjdkasj",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "10.09.2021",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Jack Russel",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "82Yz0lLNG/opera_aZRGaSbM4Q.png"
+						},
+						{
+							"key": "comments",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user pet (space in breed)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjEzNDI1NCwiZXhwIjoxNjc2MjA2MjU0fQ.gkEQlJkBrfiG5Uo6rfHxNFr42jg4bY-5G7VCluNwFts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Stepan",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "10.09.2010",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "  ",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "82Yz0lLNG/opera_aZRGaSbM4Q.png"
+						},
+						{
+							"key": "comments",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/user/pet",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
