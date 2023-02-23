@@ -1,0 +1,2359 @@
+{
+	"info": {
+		"_postman_id": "68935010-7d6b-469f-be73-3166e4af9e28",
+		"name": "AUTH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24684790"
+	},
+	"item": [
+		{
+			"name": "My valid registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"chalayamaria@gmail.com\",\r\n  \"password\": \"A23b45Cd\",\r\n  \"name\": \"Mariia\",\r\n  \"city\": \"Kyiv\",\r\n  \"phone\": \"+380994502661\",\r\n  \"birthday\": \"10.04.1995\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My valid login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"marinachalaya1973@ukr.net\",\r\n  \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My valid login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@gmail.com\",\r\n  \"password\": \"qwerty123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (space before password)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"dukewellington@gmail.com\",\r\n  \"password\": \" A23b45Cd\",\r\n  \"name\": \"Mariia\",\r\n  \"city\": \"Kyiv\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1990\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (space after password)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"duke@gmail.com\",\r\n  \"password\": \"A23b45Cd \",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (11-digit phone)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"amore@gmail.com\",\r\n  \"password\": \"abcqwerty\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+38099999454\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (13-digit phone)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"amore@gmail.com\",\r\n  \"password\": \"abcqwerty\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+3809999945458\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (6-digit password)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"amore@gmail.com\",\r\n  \"password\": \"1234567\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (33-digit password)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"amore@gmail.com\",\r\n  \"password\": \"123456789123456789123456789123045\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (9-character email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"mosn@i.ua\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (64-character email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"iloverocknrollverymuchandsosohowtodothisinmyheaddingdo@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (hyphen before email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"-dingdong@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (hyphen after email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"dingdong@gmail.com-\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (no dot in email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"dingdong@gmailcom\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (no @ in email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"dingdonggmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (no local part in email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (special symbols in email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"&choho-dyvytys%#@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (only space in email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \" \",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (only 10 spaces in email)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"          \",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (no email entered)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"123456789\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (no password entered)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"thor@gmail.com\",\r\n  \"password\": \"\",\r\n  \"name\": \"Joe\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (no name entered)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"thor@gmail.com\",\r\n  \"password\": \"147258369\",\r\n  \"name\": \"\",\r\n  \"city\": \"New York\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (only space in name)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"thor@gmail.com\",\r\n  \"password\": \"147258369\",\r\n  \"name\": \" \",\r\n  \"city\": \"Baden Baden\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (space at the beginning of name)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"th@gmail.com\",\r\n  \"password\": \"147258369\",\r\n  \"name\": \" Viktor\",\r\n  \"city\": \"Baden Baden\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (special symbols in name)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"lockhead@gmail.com\",\r\n  \"password\": \"147258369\",\r\n  \"name\": \"%&^$*@/\",\r\n  \"city\": \"Baden Baden\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (special symbols in valid name)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"lock@gmail.com\",\r\n  \"password\": \"147258369\",\r\n  \"name\": \"John James 'Jimmy' O'Grady\",\r\n  \"city\": \"Baden Baden\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (special letters in valid name)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"loc@gmail.com\",\r\n  \"password\": \"147258369\",\r\n  \"name\": \"Chloë Rømer\",\r\n  \"city\": \"Baden Baden\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (numbers in name)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"varity@gmail.com\",\r\n  \"password\": \"147258369\",\r\n  \"name\": \"-5,898.05\",\r\n  \"city\": \"Baden Baden\",\r\n  \"phone\": \"+380999994545\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User creation (letters in phone)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"varity@gmail.com\",\r\n  \"password\": \"147258369\",\r\n  \"name\": \"-5,898.05\",\r\n  \"city\": \"Baden Baden\",\r\n  \"phone\": \"+38099999454G\",\r\n  \"birthday\": \"01.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log in (space after password)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"duke@gmail.com\",\r\n  \"password\": \"A23b45Cd \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log in password with space at beginning",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"dukewellington@gmail.com\",\r\n  \"password\": \" A23b45Cd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4MTQ4OTllMjIxMzkyNTVjNWFmYyIsImlhdCI6MTY3NjExNzU4MCwiZXhwIjoxNjc2MTg5NTgwfQ.bMNrdHZQvAhgO9lx-lUn_BTFzuMOnE6CW4DvLothKeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \"Brovary\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (1 character in name)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"W\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (2 character in name)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@ukr.net\",\r\n  \"name\": \"Wu\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"15.04.1999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (16 characters in name)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@gmail.com\",\r\n  \"name\": \"Wutyoaptyersyofp\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (17 characters in name)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@gmail.com\",\r\n  \"name\": \"Wutyoaptyersyofpd\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (space at the beginning in name)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@gmail.com\",\r\n  \"name\": \" Wutyoaptyersyofpd\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (space at the end in name)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@gmail.com\",\r\n  \"name\": \"Wutyoaptyersyod \",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (spaces in name)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@gmail.com\",\r\n  \"name\": \"          \",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (space at the beginning of email)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \" whatdoido@gmail.com\",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (space at the end of email)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@gmail.com \",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (email without @)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoidogmail.com\",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (email without dot)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"whatdoido@gmailcom\",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (email with cyrillic characters)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"нуашо@gmailcom\",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (phone without +)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"нуашо@gmailcom\",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"380801112233\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (13-digit phone)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"нуашо@gmailcom\",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+3808011122336\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (11-digit phone)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"нуашо@gmailcom\",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+38080111223\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (phone with letters)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"нуашо@gmailcom\",\r\n  \"name\": \"Los Angeles\",\r\n  \"city\": \"Napoli\",\r\n  \"phone\": \"+38080111223G\",\r\n  \"birthday\": \"14.05.1998\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (empty values)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjE5MzE3MywiZXhwIjoxNjc2MjY1MTczfQ.b6x5AUUbJ6cknG5F1WcLJA3z1PRBmlCIEOwC2_RmATw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \" \",\r\n  \"name\": \" \",\r\n  \"city\": \" \",\r\n  \"phone\": \" \",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (1 character in city)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \"Y\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (2 characters in city)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \"Y\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (19 characters in city)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \"rtdjhfskjhfhshfskhf\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (20 characters in city)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \"rtdjhfskjhfhshfskhff\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (special characters in city)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4MTQ4OTllMjIxMzkyNTVjNWFmYyIsImlhdCI6MTY3NjExNzU4MCwiZXhwIjoxNjc2MTg5NTgwfQ.bMNrdHZQvAhgO9lx-lUn_BTFzuMOnE6CW4DvLothKeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \"Ærøskøbing\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (numbers in city)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjY0NDQxMCwiZXhwIjoxNjc2NzE2NDEwfQ.DaqJN8SDy6RBBPfnrvCa4j2jKhEWymINdOudoTRBDZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \"-5598465\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (space at the beginning in city)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjY0NDQxMCwiZXhwIjoxNjc2NzE2NDEwfQ.DaqJN8SDy6RBBPfnrvCa4j2jKhEWymINdOudoTRBDZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \" Paris\",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (space at the end in city)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjY0NDQxMCwiZXhwIjoxNjc2NzE2NDEwfQ.DaqJN8SDy6RBBPfnrvCa4j2jKhEWymINdOudoTRBDZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"vervein@ukr.net\",\r\n  \"name\": \"John\",\r\n  \"city\": \"Paris \",\r\n  \"phone\": \"+380801112233\",\r\n  \"birthday\": \"00.00.0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (city starting with comma then region)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjE5MzE3MywiZXhwIjoxNjc2MjY1MTczfQ.b6x5AUUbJ6cknG5F1WcLJA3z1PRBmlCIEOwC2_RmATw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"morsunne@gmail.com\",\r\n  \"name\": \"Bjork\",\r\n  \"city\": \", Kyiv region\",\r\n  \"phone\": \"+380509635225\",\r\n  \"birthday\": \"12.12.1986\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (letters in date)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjE5MzE3MywiZXhwIjoxNjc2MjY1MTczfQ.b6x5AUUbJ6cknG5F1WcLJA3z1PRBmlCIEOwC2_RmATw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"morsunne@gmail.com\",\r\n  \"name\": \"Bjork\",\r\n  \"city\": \"Kyiv region\",\r\n  \"phone\": \"+380509635225\",\r\n  \"birthday\": \"hh.ty.1986\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (invalid date in date)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjE5MzE3MywiZXhwIjoxNjc2MjY1MTczfQ.b6x5AUUbJ6cknG5F1WcLJA3z1PRBmlCIEOwC2_RmATw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"morsunne@gmail.com\",\r\n  \"name\": \"Bjork\",\r\n  \"city\": \"Kyiv region\",\r\n  \"phone\": \"+380509635225\",\r\n  \"birthday\": \"30.02.1986\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update info (unreal day in date)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTc4ZmZiOTllMjIxMzkyNTVjNWJmNyIsImlhdCI6MTY3NjE5MzE3MywiZXhwIjoxNjc2MjY1MTczfQ.b6x5AUUbJ6cknG5F1WcLJA3z1PRBmlCIEOwC2_RmATw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"morsunne@gmail.com\",\r\n  \"name\": \"Bjork\",\r\n  \"city\": \"Kyiv region\",\r\n  \"phone\": \"+380509635225\",\r\n  \"birthday\": \"32.02.1986\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/update",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOG OUT",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTZhYjBlMTljYmVmODM1MmVkNWNhYyIsImlhdCI6MTY3NjMxMTYxOCwiZXhwIjoxNjc2MzgzNjE4fQ.ofXbBnuz_BuJ2CyLzK7ELaZpci0gtKYoGMmFG3mAK8o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/logout",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change avatar of user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjQwNDQ1MiwiZXhwIjoxNjc2NDc2NDUyfQ.Cyzx_PbvLB7z4kU1bFGuJjLgrL6M1kcY_37w4wZLjBE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "H0qMnteQC/mammal_raccoon-wisconsin_mary-braatz_600x300.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/avatars",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"avatars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change avatar of user TXT",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "XihFhlnGX/Among Us.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/avatars",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"avatars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change avatar of user MP3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWE5ZjBlNzBjZTFhNDU2NDE1YzI2ZSIsImlhdCI6MTY3NjcyMzQ1OSwiZXhwIjoxNjc2Nzk1NDU5fQ.h32P9eJDSxVRLMP_ge1vsqG9RLHWM7KU6BvjGeXpfGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "kpkTKrXuD/LOR3L3I - Passive Resistance.mp3"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petly-backend-backup.onrender.com/api/auth/avatars",
+					"protocol": "https",
+					"host": [
+						"petly-backend-backup",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"avatars"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
